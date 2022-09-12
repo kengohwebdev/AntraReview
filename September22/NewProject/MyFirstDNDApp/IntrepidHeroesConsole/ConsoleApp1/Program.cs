@@ -7,6 +7,8 @@ namespace IntrepidHeroesConsole
     {
         public static void Main(string[] args)
         {
+       
+
            MyCharacter newCharacter = new MyCharacter();
             newCharacter.CreateCharacter();
             newCharacter.ViewCharacter();

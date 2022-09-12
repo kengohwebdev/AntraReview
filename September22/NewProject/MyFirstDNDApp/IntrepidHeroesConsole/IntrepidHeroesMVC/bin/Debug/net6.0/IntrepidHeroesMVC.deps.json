@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "IntrepidHeroesMVC/1.0.0": {
+        "dependencies": {
+          "IntrepidHeroesConsole": "1.0.0"
+        },
+        "runtime": {
+          "IntrepidHeroesMVC.dll": {}
+        }
+      },
+      "IntrepidHeroesConsole/1.0.0": {
+        "runtime": {
+          "IntrepidHeroesConsole.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IntrepidHeroesMVC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IntrepidHeroesConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
