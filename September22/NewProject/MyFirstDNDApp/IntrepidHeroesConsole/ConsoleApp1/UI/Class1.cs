@@ -9,6 +9,7 @@ namespace IntrepidHeroesConsole.UI
 
         Character character;
         Character character2;
+        Character character3;
         public MyCharacter()
         {
             character = new Character();
