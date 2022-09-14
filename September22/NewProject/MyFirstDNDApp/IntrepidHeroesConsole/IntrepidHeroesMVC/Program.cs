@@ -18,18 +18,19 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseEndpoints(async endpoints =>
-{
-    endpoints.MapGet("/", async context =>
-    {
-        await context.Response.WriteAsync("Hello World!");
-    });
-});
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+app.UseEndpoints(async endpoints =>
+{
+    endpoints.MapGet("/", async context =>
+    {
+        await context.Response.WriteAsync("Hello World!!");
+    });
+});
 
 app.Run();
