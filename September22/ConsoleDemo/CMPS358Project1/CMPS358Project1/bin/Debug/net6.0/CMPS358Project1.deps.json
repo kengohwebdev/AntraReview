@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CMPS358Project1/1.0.0": {
+        "runtime": {
+          "CMPS358Project1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CMPS358Project1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

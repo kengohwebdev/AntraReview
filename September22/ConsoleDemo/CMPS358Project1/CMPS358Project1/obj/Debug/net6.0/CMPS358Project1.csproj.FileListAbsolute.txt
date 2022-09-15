@@ -1,0 +1,15 @@
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\bin\Debug\net6.0\CMPS358Project1.exe
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\bin\Debug\net6.0\CMPS358Project1.deps.json
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\bin\Debug\net6.0\CMPS358Project1.runtimeconfig.json
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\bin\Debug\net6.0\CMPS358Project1.dll
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\bin\Debug\net6.0\CMPS358Project1.pdb
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.csproj.AssemblyReference.cache
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.AssemblyInfoInputs.cache
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.AssemblyInfo.cs
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.csproj.CoreCompileInputs.cache
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.dll
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\refint\CMPS358Project1.dll
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.pdb
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\CMPS358Project1.genruntimeconfig.cache
+C:\Users\kenai\source\repos\September22\ConsoleDemo\CMPS358Project1\CMPS358Project1\obj\Debug\net6.0\ref\CMPS358Project1.dll
