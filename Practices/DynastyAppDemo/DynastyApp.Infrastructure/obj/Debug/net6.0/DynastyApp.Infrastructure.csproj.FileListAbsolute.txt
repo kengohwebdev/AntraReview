@@ -1,0 +1,17 @@
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.AssemblyInfo.cs
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\bin\Debug\net6.0\DynastyApp.Infrastructure.deps.json
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\bin\Debug\net6.0\DynastyApp.Infrastructure.dll
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\bin\Debug\net6.0\DynastyApp.Infrastructure.pdb
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\bin\Debug\net6.0\DynastyApp.Core.dll
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\bin\Debug\net6.0\DynastyApp.Core.pdb
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.csproj.CopyComplete
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.dll
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\refint\DynastyApp.Infrastructure.dll
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.pdb
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\ref\DynastyApp.Infrastructure.dll
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\bin\Debug\net6.0\DynastyApp.Infrastructure.runtimeconfig.json
+C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Infrastructure\obj\Debug\net6.0\DynastyApp.Infrastructure.genruntimeconfig.cache

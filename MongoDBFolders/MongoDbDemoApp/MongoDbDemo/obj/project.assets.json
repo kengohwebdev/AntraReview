@@ -662,9 +662,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\MongoDBFolders\\MongoDbDemoApp\\MongoDbDemo\\MongoDbDemo.csproj",
-      "projectName": "MongoDbDemo",
-      "projectPath": "C:\\Users\\kenai\\source\\repos\\MongoDBFolders\\MongoDbDemoApp\\MongoDbDemo\\MongoDbDemo.csproj",
+      "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\MongoDBFolders\\MongoDbDemoApp\\MongoDbDemo\\MongoDBDemo.csproj",
+      "projectName": "MongoDBDemo",
+      "projectPath": "C:\\Users\\kenai\\source\\repos\\MongoDBFolders\\MongoDbDemoApp\\MongoDbDemo\\MongoDBDemo.csproj",
       "packagesPath": "C:\\Users\\kenai\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kenai\\source\\repos\\MongoDBFolders\\MongoDbDemoApp\\MongoDbDemo\\obj\\",
       "projectStyle": "PackageReference",
@@ -720,7 +720,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
