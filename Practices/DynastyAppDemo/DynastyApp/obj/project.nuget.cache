@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pv2kjf8HbeWepvDHUFJ219xWFbxK0I1ixedVT9YtrKBpF/tvtuV9nV9NctISeK7zoz2gYrHT8hLoZq1NR2ua/A==",
+  "dgSpecHash": "2BC25twAhTze7glZKferppO90YusdS/gvVU5QLt2l70cby3oHCN+pIpo5+/DwdJtidjPJJPGUPS9LLUfit6Zxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp\\DynastyApp.WebMVC.csproj",
+  "projectFilePath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp\\DynastyApp.WebMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenai\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kenai\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

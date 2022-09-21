@@ -10,3 +10,15 @@ C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\n
 C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\refint\DynastyApp.Core.dll
 C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.pdb
 C:\Users\kenai\source\repos\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\ref\DynastyApp.Core.dll
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\bin\Debug\net6.0\DynastyApp.Core.deps.json
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\bin\Debug\net6.0\DynastyApp.Core.dll
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\bin\Debug\net6.0\DynastyApp.Core.pdb
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.csproj.AssemblyReference.cache
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.AssemblyInfoInputs.cache
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.AssemblyInfo.cs
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.dll
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\refint\DynastyApp.Core.dll
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\DynastyApp.Core.pdb
+C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp.Core\obj\Debug\net6.0\ref\DynastyApp.Core.dll

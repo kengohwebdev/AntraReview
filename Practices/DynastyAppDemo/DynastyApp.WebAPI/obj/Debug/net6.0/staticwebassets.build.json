@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "U7UtnMAvsmXppnQp8COrxIKOUxjTTUH21YIL8ckRhbo=",
+  "Source": "DynastyApp.WebAPI",
+  "BasePath": "_content/DynastyApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

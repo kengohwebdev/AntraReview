@@ -1,11 +1,20 @@
+using DynastyApp.Core.Contract.Repository;
+using DynastyApp.Core.Contract.Service;
 using DynastyApp.Infrastructure.Data;
-
+using DynastyApp.Infrastructure.Repository;
+using DynastyApp.Infrastructure.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSqlServer<DADbContext>(builder.Configuration.GetConnectionString("DADb"));
+
+//dependency injection for repository
+builder.Services.AddScoped<IEmployeeRepositoryAsync, EmployeeRepositoryAsync>();
+
+//dependency injection for services
+builder.Services.AddScoped<IEmployeeServiceAsync, EmployeeServiceAsync>();
 
 var app = builder.Build();
 

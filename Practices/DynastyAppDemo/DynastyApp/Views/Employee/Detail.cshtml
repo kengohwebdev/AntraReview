@@ -1,0 +1,41 @@
+﻿@model List<EmployeeResponseModel>
+
+
+
+<h1>Employee details</h1>
+<table class="table">
+    <thead>
+        <tr>
+
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>StreetAddress</td>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+            <th>DateOfBirth</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var e in Model)
+            {
+                <tr>
+
+                    <td>@e.FirstName</td>
+                    <td>@e.LastName</td>
+                    <td>@e.StreetAddress</td>
+                    <td>@e.City</td>
+                    <td>@e.State</td>
+                    <td>@e.ZipCode</td>
+                    <td>@e.DateOfBirth</td>
+                </tr>
+
+            }
+        }
+    </tbody>
+</table>
+
+
+
+<a asp-action="Index" asp-controller="Employee" class="btn btn-primary">Back</a>

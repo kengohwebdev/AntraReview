@@ -13,7 +13,8 @@ namespace DynastyApp.Core.Entity
     {
         public int Id { get; set; }
 
-        [Required, Column(TypeName = "varchar")]
+        [Required(ErrorMessage ="First Name is required"), 
+            Column(TypeName = "varchar")]
         [MaxLength(20)]
         public string FirstName { get; set; }
 

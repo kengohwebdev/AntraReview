@@ -1,8 +1,8 @@
-﻿using DynastyApp.Models;
+﻿using DynastyApp.WebMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DynastyApp.Controllers
+namespace DynastyApp.WebMVC.Controllers
 {
     public class HomeController : Controller
     {

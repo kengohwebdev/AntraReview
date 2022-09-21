@@ -1,4 +1,4 @@
-namespace DynastyApp.Models
+namespace DynastyApp.WebMVC.Models
 {
     public class ErrorViewModel
     {

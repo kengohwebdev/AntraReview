@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DynastyApp.Core.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DynastyApp.Core.Model.Service
+namespace DynastyApp.Core.Contract.Service
 {
     public interface IEmployeeServiceAsync
     {
@@ -13,6 +14,6 @@ namespace DynastyApp.Core.Model.Service
         Task<EmployeeResponseModel> GetByIdAsync(int id);
         Task<int> UpdateEmployeeAsync(EmployeeRequestModel employee);
         Task<EmployeeRequestModel> GetEmployeeForEditAsync(int id);
-        Task DeleteEmployeeAsync(int id);
+        Task<int> DeleteEmployeeAsync(int id);
     }
 }
