@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DynastyApp.WebMVC
 build_property.RootNamespace = DynastyApp.WebMVC
-build_property.ProjectDir = C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp\
+build_property.ProjectDir = c:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp
+build_property.MSBuildProjectDirectory = c:\Users\kenai\source\repos\Practices\AntraReview\Practices\DynastyAppDemo\DynastyApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Create.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Detail.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Edit.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Index.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Home/Index.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Home/Privacy.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/Error.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_EmployeeCard.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_EmployeeCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXBsb3llZUNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_footer.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_header.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/_ViewImports.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/_ViewStart.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_Layout.cshtml]
+[c:/Users/kenai/source/repos/Practices/AntraReview/Practices/DynastyAppDemo/DynastyApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z5vlue9s8m
