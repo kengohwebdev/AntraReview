@@ -20,9 +20,18 @@ namespace DynastyApp.Infrastructure.Service
             _employeeRepositoryAsync = employeeRepositoryAsync;
         }
 
-        public Task<int> AddEmployeeAsync(EmployeeRequestModel employee)
+        public async Task<int> AddEmployeeAsync(EmployeeRequestModel employee)
         {
-            throw new NotImplementedException();
+            Employee emp = new Employee();
+            emp.StreetAddress = employee.StreetAddress;
+            emp.City = employee.City;
+            emp.State = employee.State;
+            emp.ZipCode = employee.ZipCode;
+            emp.DateOfBirth = employee.DateOfBirth;
+            emp.FirstName = employee.FirstName;
+            emp.LastName = employee.LastName;
+            return await _employeeRepositoryAsync.InsertAsync(emp);
+          
         }
 
         public async Task<int> DeleteEmployeeAsync(int id)

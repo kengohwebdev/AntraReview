@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace DynastyApp.Infrastructure.Data
 {
-    public class DADbContext:DbContext
+    public class DADbContext:IdentityDbContext<ApplicationUser>
     {
         public DADbContext(DbContextOptions<DADbContext> option) :base(option)
         {
@@ -16,6 +17,7 @@ namespace DynastyApp.Infrastructure.Data
         }
 
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
      
     }
 }
