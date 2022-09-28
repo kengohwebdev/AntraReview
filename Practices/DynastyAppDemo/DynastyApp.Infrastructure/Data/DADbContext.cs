@@ -17,7 +17,7 @@ namespace DynastyApp.Infrastructure.Data
         }
 
         public DbSet<Employee> Employee { get; set; }
-        public DbSet<ApplicationUser> ApplicationUser { get; set; }
+
      
     }
 }

@@ -1,22 +1,33 @@
-import { MaterialModule } from './../../Material.Module';
-import { MatButtonModule } from '@angular/material/button';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCardModule } from '@angular/material/card';
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountService } from 'src/services/account.service';
+
+
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [CommonModule, MaterialModule],
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  providers: [AccountService]
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  loginModel = {
+    userName: "",
+    password: ""
+  }
+  constructor(private accountService: AccountService , private router: Router) { }
 
   ngOnInit(): void {
   }
+  loginUser(loginForm: NgForm) {
 
+    this.accountService.login(loginForm.value).subscribe(d => {
+
+      localStorage.setItem("token", d["jwt"]);
+      this.router.navigateByUrl("dashboard")
+
+    })
+  }
 }

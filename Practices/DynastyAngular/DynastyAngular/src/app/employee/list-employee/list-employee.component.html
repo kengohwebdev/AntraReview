@@ -1,0 +1,32 @@
+<h1 class="display-4">Employees</h1>
+<hr/>
+<table class="table table-striped table-dark table-hover table-bordered table-sm">
+    <thead class="table-success">
+        <tr>
+            <th>S.N.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Street Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+            <th>Date Of Birth</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr *ngFor="let e of empCollection; index as i">
+            <td>{{i+1}}</td>
+            <td>{{e.FirstName}}</td>
+            <td>{{e.LastName}}</td>
+            <td>{{e.StreetAddress}}</td>
+            <td>{{e.City}}</td>
+            <td>{{e.State}}</td>
+            <td>{{e.ZipCode}}</td>
+            <td>{{e.DateOfBirth}}</td>
+            <td>
+                <input type="button" class="btn btn-link" value="Edit" (click)="updateEmployeeById(e.id)" />
+                <input type="button" class="btn btn-danger" value="Delete" (click)="deleteEmployee(e.id)" />
+            </td>
+        </tr>
+     </tbody>
+    </table>

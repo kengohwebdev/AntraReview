@@ -1,11 +1,15 @@
 ﻿using DynastyApp.Core.Contract.Service;
 using DynastyApp.Core.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace DynastyApp.WebAPI.Controllers
 {
-    public class EmployeeController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class EmployeeController : ControllerBase
     {
+
         private readonly IEmployeeServiceAsync employeeServiceAsync;
 
         public EmployeeController(IEmployeeServiceAsync empservice)
@@ -62,48 +66,4 @@ namespace DynastyApp.WebAPI.Controllers
             return BadRequest();
         }
     }
-
 }
-
-
-/*
-   [HttpGet]
-   //https://localhost:portnumber/api/employee
-   public IActionResult Get()
-   {
-       string result = "All Employees are returned";
-       return Ok(result);
-   }
-   [HttpGet]
-   [Route("{id:int}/{age:int}")]
-   //https://localhost:portnumber/api/employee/3/42
-   public IActionResult Get(int id, int age)
-   {
-       string result = "Emp detail with Id =  "+id;
-       return Ok(result);
-   }
-   [HttpGet]
-   [Route("{name}")]
-   //https://localhost:portnumber/api/employee/allen
-   public IActionResult Get(string name)
-   {
-       string result = "Welcome =  " + name;
-       return Ok(result);
-   }
-   [HttpGet]
-   [Route("city/{city}")]
-   //https://localhost:port/api/employee/city/chicago
-   public IActionResult GetByCity(string city)
-   {
-       string result = "Welcome from city =  " + city;
-       return Ok(result);
-   }
-   [HttpPost]
-   //https://localhost:portnumber/api/employee
-   public IActionResult AddEmployee(Employee employee)
-   {
-       return Ok("Employee has been inserted");
-   }
-   */
-
-
