@@ -12,9 +12,11 @@ builder.Services.AddSqlServer<DADbContext>(builder.Configuration.GetConnectionSt
 
 //dependency injection for repository
 builder.Services.AddScoped<IEmployeeRepositoryAsync, EmployeeRepositoryAsync>();
+builder.Services.AddScoped<IRegionRepositoryAsync, RegionRepositoryAsync>();
 
 //dependency injection for services
 builder.Services.AddScoped<IEmployeeServiceAsync, EmployeeServiceAsync>();
+builder.Services.AddScoped<IRegionServiceAsync, RegionServiceAsync>();
 
 var app = builder.Build();
 

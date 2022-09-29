@@ -17,6 +17,7 @@ namespace DynastyApp.Infrastructure.Data
         }
 
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<Region> Region { get; set; }
 
      
     }
