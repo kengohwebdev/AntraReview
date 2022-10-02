@@ -61,9 +61,13 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddScoped<IEmployeeRepositoryAsync, EmployeeRepositoryAsync>();
 builder.Services.AddScoped<IAccountRepositoryAsync,AccountRepositoryAsync>();
+builder.Services.AddScoped<IRegionRepositoryAsync, RegionRepositoryAsync>();
+builder.Services.AddScoped<ICustomerRepositoryAsync, CustomerRepositoryAsync>();
 
 builder.Services.AddScoped<IEmployeeServiceAsync, EmployeeServiceAsync>();
 builder.Services.AddScoped<IAccountServiceAsync, AccountServiceAsync>();
+builder.Services.AddScoped<IRegionServiceAsync, RegionServiceAsync>();
+builder.Services.AddScoped<ICustomerServiceAsync, CustomerServiceAsync>();
 
 var app = builder.Build();
 
