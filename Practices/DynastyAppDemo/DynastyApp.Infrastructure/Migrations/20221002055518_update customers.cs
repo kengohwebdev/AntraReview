@@ -4,7 +4,7 @@
 
 namespace DynastyApp.Infrastructure.Migrations
 {
-    public partial class updateEmployeeTable : Migration
+    public partial class updatecustomers : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -1,19 +1,18 @@
 ﻿@model List<EmployeeResponseModel>
 
 
-
 <h1>Employee details</h1>
 <table class="table">
     <thead>
         <tr>
 
-            <td>FirstName</td>
-            <td>LastName</td>
-            <td>StreetAddress</td>
+            <td>Title</td>
+            <td>TitleOfCourtesy</td>
+            <td>Full Name</td>
+            <th>Birthdate</th>
+            <th>Phone</th>
+            <th>Address</th>
             <th>City</th>
-            <th>State</th>
-            <th>ZipCode</th>
-            <th>DateOfBirth</th>
         </tr>
     </thead>
     <tbody>
@@ -22,20 +21,18 @@
             {
                 <tr>
 
-                    <td>@e.FirstName</td>
-                    <td>@e.LastName</td>
-                    <td>@e.StreetAddress</td>
+                    <td>@e.Title</td>
+                    <td>@e.TitleOfCourtesy</td>
+                    <td>@e.FullName</td>
+                    <td>@e.BirthDate</td>
+                    <td>@e.Phone</td>
+                    <td>@e.Address</td>
                     <td>@e.City</td>
-                    <td>@e.State</td>
-                    <td>@e.ZipCode</td>
-                    <td>@e.DateOfBirth</td>
                 </tr>
 
             }
         }
     </tbody>
 </table>
-
-
 
 <a asp-action="Index" asp-controller="Employee" class="btn btn-primary">Back</a>

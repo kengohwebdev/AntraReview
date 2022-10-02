@@ -24,9 +24,8 @@ namespace DynastyApp.Core.Entity
         [MaxLength(20)]
         public string City { get; set; }
         public int RegionId { get; set; }
-        [Required, Column(TypeName = "varchar")]
-        [MaxLength(15)]
-        public string PostalCode { get; set; }
+       
+        public int PostalCode { get; set; }
         [Required, Column(TypeName = "varchar")]
         [MaxLength(15)]
         public string Country { get; set; }

@@ -13,53 +13,64 @@ namespace DynastyApp.Infrastructure.Service
 {
     public class EmployeeServiceAsync : IEmployeeServiceAsync
     {
-        private readonly IEmployeeRepositoryAsync _employeeRepositoryAsync;
-
-        public EmployeeServiceAsync(IEmployeeRepositoryAsync employeeRepositoryAsync)
+        private readonly IEmployeeRepositoryAsync employeeRepositoryAsync;
+        private readonly IRegionRepositoryAsync regionRepositoryAsync;
+        public EmployeeServiceAsync(IEmployeeRepositoryAsync _emp, IRegionRepositoryAsync regionRepositoryAsync)
         {
-            _employeeRepositoryAsync = employeeRepositoryAsync;
+            employeeRepositoryAsync = _emp;
+            this.regionRepositoryAsync = regionRepositoryAsync;
         }
 
         public async Task<int> AddEmployeeAsync(EmployeeRequestModel employee)
         {
             Employee emp = new Employee();
-            emp.StreetAddress = employee.StreetAddress;
+            emp.Address = employee.Address;
+            emp.RegionId = employee.RegionId;
+            emp.BirthDate = employee.BirthDate;
+            emp.ReportsTo = employee.ReportsTo;
+            emp.PhotoPath = employee.PhotoPath;
             emp.City = employee.City;
-            emp.State = employee.State;
-            emp.ZipCode = employee.ZipCode;
-            emp.DateOfBirth = employee.DateOfBirth;
+            emp.Country = employee.Country;
             emp.FirstName = employee.FirstName;
             emp.LastName = employee.LastName;
-            return await _employeeRepositoryAsync.InsertAsync(emp);
-          
+            emp.Phone = employee.Phone;
+            emp.HireDate = employee.HireDate;
+            emp.PostalCode = employee.PostalCode;
+            emp.Title = employee.Title;
+            emp.TitleOfCourtesy = employee.TitleOfCourtesy;
+            return await employeeRepositoryAsync.InsertAsync(emp);
         }
 
         public async Task<int> DeleteEmployeeAsync(int id)
         {
-            return await _employeeRepositoryAsync.DeleteAsync(id);
+            return await employeeRepositoryAsync.DeleteAsync(id);
         }
 
         public async Task<IEnumerable<EmployeeResponseModel>> GetAllAsync()
         {
-            var collection = await _employeeRepositoryAsync.GetAllAsync();
+            var collection = await employeeRepositoryAsync.GetAllAsync();
 
             if (collection != null)
             {
                 List<EmployeeResponseModel> result = new List<EmployeeResponseModel>();
                 foreach (var item in collection)
                 {
-
                     EmployeeResponseModel model = new EmployeeResponseModel();
                     model.Id = item.Id;
+                    model.Phone = item.Phone;
+                    model.PhotoPath = item.PhotoPath;
+                    model.Title = item.Title;
+                    model.BirthDate = item.BirthDate;
+                    model.Address = item.Address;
+                    model.City = item.City;
+                    model.FullName = item.FirstName + " " + item.LastName;
                     model.FirstName = item.FirstName;
                     model.LastName = item.LastName;
-                    model.StreetAddress = item.StreetAddress;
-                    model.City = item.City;
-                    model.State = item.State;
-                    model.ZipCode = item.ZipCode;
-                    model.DateOfBirth = item.DateOfBirth;
+                    model.TitleOfCourtesy = item.TitleOfCourtesy;
+                    var region = await regionRepositoryAsync.GetByIdAsync(item.RegionId);
+                    model.Region = new RegionModel() { Name = region.Name };
+                    model.RegionName = region.Name;
                     result.Add(model);
-
                 }
                 return result;
             }
@@ -68,18 +79,19 @@ namespace DynastyApp.Infrastructure.Service
 
         public async Task<EmployeeResponseModel> GetByIdAsync(int id)
         {
-            var item = await _employeeRepositoryAsync.GetByIdAsync(id);
-            if(item != null)
+            var item = await employeeRepositoryAsync.GetByIdAsync(id);
+            if (item != null)
             {
                 EmployeeResponseModel model = new EmployeeResponseModel();
                 model.Id = item.Id;
-                model.FirstName = item.FirstName;
-                model.LastName = item.LastName;
-                model.StreetAddress = item.StreetAddress;
+                model.Phone = item.Phone;
+                model.PhotoPath = item.PhotoPath;
+                model.Title = item.Title;
+                model.BirthDate = item.BirthDate;
+                model.Address = item.Address;
                 model.City = item.City;
-                model.State = item.State;
-                model.ZipCode = item.ZipCode;
-                model.DateOfBirth = item.DateOfBirth;
+                model.FullName = item.FirstName + " " + item.LastName;
+                model.TitleOfCourtesy = item.TitleOfCourtesy;
                 return model;
             }
             return null;
@@ -87,18 +99,24 @@ namespace DynastyApp.Infrastructure.Service
 
         public async Task<EmployeeRequestModel> GetEmployeeForEditAsync(int id)
         {
-            var item = await _employeeRepositoryAsync.GetByIdAsync(id);
+            var item = await employeeRepositoryAsync.GetByIdAsync(id);
             if (item != null)
             {
                 EmployeeRequestModel model = new EmployeeRequestModel();
                 model.Id = item.Id;
+                model.Phone = item.Phone;
+                model.PhotoPath = item.PhotoPath;
+                model.Title = item.Title;
+                model.BirthDate = item.BirthDate;
+                model.Address = item.Address;
+                model.City = item.City;
                 model.FirstName = item.FirstName;
                 model.LastName = item.LastName;
-                model.StreetAddress = item.StreetAddress;
-                model.City = item.City;
-                model.State = item.State;
-                model.ZipCode = item.ZipCode;
-                model.DateOfBirth = item.DateOfBirth;
+                model.TitleOfCourtesy = item.TitleOfCourtesy;
+                model.RegionId = item.RegionId;
+                model.PostalCode = item.PostalCode;
+                model.Country = item.Country;
+                model.ReportsTo = item.ReportsTo;
                 return model;
             }
             return null;
@@ -108,15 +126,21 @@ namespace DynastyApp.Infrastructure.Service
         {
             Employee emp = new Employee();
             emp.Id = employee.Id;
+            emp.Address = employee.Address;
+            emp.RegionId = employee.RegionId;
+            emp.BirthDate = employee.BirthDate;
+            emp.ReportsTo = employee.ReportsTo;
+            emp.PhotoPath = employee.PhotoPath;
+            emp.City = employee.City;
+            emp.Country = employee.Country;
             emp.FirstName = employee.FirstName;
             emp.LastName = employee.LastName;
-            emp.StreetAddress = employee.StreetAddress;
-            emp.City = employee.City;
-            emp.State = employee.State;
-            emp.ZipCode = employee.ZipCode;
-            emp.DateOfBirth = employee.DateOfBirth;
-
-            return await _employeeRepositoryAsync.UpdateAsync(emp);
+            emp.Phone = employee.Phone;
+            emp.HireDate = employee.HireDate;
+            emp.PostalCode = employee.PostalCode;
+            emp.Title = employee.Title;
+            emp.TitleOfCourtesy = employee.TitleOfCourtesy;
+            return await employeeRepositoryAsync.UpdateAsync(emp);
         }
     }
 }

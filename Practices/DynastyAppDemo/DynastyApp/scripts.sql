@@ -321,3 +321,40 @@ GO
 COMMIT;
 GO
 
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20221002003709_add customer table')
+BEGIN
+    CREATE TABLE [Customer] (
+        [Id] int NOT NULL IDENTITY,
+        [Name] varchar(30) NOT NULL,
+        [Title] varchar(30) NOT NULL,
+        [Address] varchar(80) NOT NULL,
+        [City] varchar(20) NOT NULL,
+        [RegionId] int NOT NULL,
+        [PostalCode] varchar(15) NOT NULL,
+        [Country] varchar(15) NOT NULL,
+        [Phone] varchar(15) NOT NULL,
+        CONSTRAINT [PK_Customer] PRIMARY KEY ([Id]),
+        CONSTRAINT [FK_Customer_Region_RegionId] FOREIGN KEY ([RegionId]) REFERENCES [Region] ([Id]) ON DELETE CASCADE
+    );
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20221002003709_add customer table')
+BEGIN
+    CREATE INDEX [IX_Customer_RegionId] ON [Customer] ([RegionId]);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20221002003709_add customer table')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20221002003709_add customer table', N'6.0.9');
+END;
+GO
+
+COMMIT;
+GO
+
