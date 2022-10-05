@@ -10,6 +10,7 @@ import { MaterialModule } from 'src/Material.Module';
 import { RegionModule } from '../region/region.module';
 import { CustomerModule } from '../customer/customer.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AccessModule } from '../access/access.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     RegionModule,
     CustomerModule,
     RouterModule,
+    AccessModule,
     HttpClientModule
   ],
   exports:[],

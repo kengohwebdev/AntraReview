@@ -17,24 +17,10 @@
             </mat-form-field>
             <div>
                 <button mat-raised-button type="submit" color="primary">Login</button>
-                <button mat-raised-button style="margin: 5px" color="accent">Register</button>
+                <button mat-raised-button style="margin: 5px" color="accent" (click)="RedirectRegister()">Register</button>
             </div>
         </form>
 
 
     </mat-card-content>
 </mat-card>
-
-<!-- 
-<h1 class="display-4">Login Form</h1>
-<form #loginForm="ngForm" (submit)="loginUser(loginForm)">
-    <div class="mb-3">
-        <label>Enter Username</label>
-    <input type="email" name="userName" required class="form-control" [(ngModel)]="loginModel.userName"/>
-</div>
-<div class="mb-3">
-        <label>Enter Password</label>
-    <input type="password" name="password" required class="form-control" [(ngModel)]="loginModel.password"/>
-</div>
-<input type="submit" value="Log In" class="btn btn-primary"/>
-</form> -->

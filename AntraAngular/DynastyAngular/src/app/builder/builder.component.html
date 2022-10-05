@@ -1,0 +1,67 @@
+<p>Form builder</p>
+
+<br>
+
+<!-- <mat-form-field appearance = "fill">
+    <mat-label>Name</mat-label>
+    <input matInput [formControl] = "_control">
+</mat-form-field> -->
+
+
+<!-- 
+<div [formGroup] = "_group">
+    <mat-form-field appearance = "fill">
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName = "username">
+    </mat-form-field>
+    <mat-form-field appearance = "fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName = "name">
+    </mat-form-field>
+    <div class ="example-button-row" style="margin-top: 5px">
+        <button mat-raised-button color = "primary" (click)="GetValue()"> Get Values</button>
+        <button mat-raised-button color = "primary" (click)="SetValue()"> Set Values</button>
+    </div>
+</div> -->
+
+<!-- <form [formGroup] = "_group" (ngSubmit)="GetValue()">
+    <mat-form-field appearance = "fill">
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName = "username">
+    </mat-form-field>
+    <mat-form-field appearance = "fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName = "name">
+    </mat-form-field>
+    <div class ="example-button-row" style="margin-top: 5px">
+        <button mat-raised-button color = "primary" > Get Values</button>
+        <button mat-raised-button color = "primary" (click)="SetValue()"> Set Values</button>
+    </div>
+</form> -->
+
+<!-- <div *ngFor="let item of _array.controls">
+    <mat-form-field appearance = "fill">
+        <mat-label>Name</mat-label>
+        <input matInput [formControl]="item">
+    </mat-form-field>
+</div> -->
+
+<div *ngFor="let item of _arrayWithGroup.controls; let i = index">
+<div [formGroup]="item">
+    <h3>Part {{i+1}}</h3>
+    <mat-form-field appearance = "fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance = "fill">
+        <mat-label>UserName</mat-label>
+        <input matInput formControlName="username">
+    </mat-form-field>
+</div>
+</div>
+
+<div>
+    <button mat-raised-button color = "primary" (click)="GetValue()"> Get Values</button>
+    <button mat-raised-button color = "primary" (click)="SetValue()"> Set Values</button>
+</div>
+

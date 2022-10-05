@@ -10,7 +10,7 @@ export class UserService {
 
     }
     ProceedLogin(inputdata: any) {
-        return this.http.post('https://localhost:7139/login?Username=asimar%40dnd.com&Password=1%40Dndbeyond', inputdata)
+        return this.http.post('https://localhost:7139/login?Username=wizard%40dnd.com&Password=1%40Dndbeyond', inputdata)
     }
 
     IsLoggedIn() {
@@ -22,6 +22,6 @@ export class UserService {
     }
 
     Registeration(inputdata: any) {
-        return this.http.post('https://localhost:7139/api/Account/signup', inputdata)
+        return this.http.post('https://localhost:7139/signup', inputdata)
     }
 }
