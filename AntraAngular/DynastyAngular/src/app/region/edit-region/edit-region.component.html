@@ -1,0 +1,22 @@
+
+<div *ngIf="isSuccessful"  class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Region has been Edited! </strong>
+    <a [routerLink]="'/region/list'"> Go to Region List</a>
+ 
+  </div>
+
+<h1 class="display-4">Edit Region</h1>
+<hr/>
+<form [formGroup]="editRegionForm" >
+    <div class="form-group mb-3">
+        <label>Enter Region Name</label>
+    <input type="text" formControlName="regionName" class="form-control" />
+<div class="text-danger" *ngIf="editRegionForm.get('regionName')?.hasError('required') && editRegionForm.get('regionName')?.touched">
+    Region is required
+</div>
+<div class="text-danger" *ngIf="editRegionForm.get('regionName')?.hasError('minlength') && editRegionForm.get('regionName')?.touched">
+    Minimum 4 characters are required
+</div>
+</div>
+<input type="button" class="btn btn-primary"  [disabled]="!editRegionForm.valid"  value="Edit Region" (click)="updateRegion()" />
+</form>

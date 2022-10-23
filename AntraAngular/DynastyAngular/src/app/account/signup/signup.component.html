@@ -1,0 +1,77 @@
+<!-- <form [formGroup]="signUpForm" >
+    <div class="mb-3">
+        <label>First Name</label>
+        <input type="text" formControlName="firstName"  class="form-control"/>
+        <div class="text-danger" *ngIf="signUpForm.get('firstName')?.hasError('required') && signUpForm.get('firstName')?.touched">
+            firstName is required
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Last Name</label>
+        <input type="text" formControlName="lastName"  class="form-control"/>
+        <div class="text-danger" *ngIf="signUpForm.get('lastName')?.hasError('required') && signUpForm.get('lastName')?.touched">
+            last name is required
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Email Id</label>
+        <input type="email" formControlName="emailId"  class="form-control"/>
+        <div class="text-danger" *ngIf="signUpForm.get('emailId')?.hasError('required') && signUpForm.get('emailId')?.touched">
+            Email Id is required
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Password</label>
+        <input type="password" formControlName="password"  class="form-control"/>
+        <div class="text-danger" *ngIf="signUpForm.get('password')?.hasError('required') && signUpForm.get('password')?.touched">
+            Password is required
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Confirm Password</label>
+        <input type="password" formControlName="confirmPassword"  class="form-control"/>
+        <div class="text-danger" *ngIf="signUpForm.get('confirmPassword')?.hasError('required') && signUpForm.get('confirmPassword')?.touched">
+            confirm password is required
+        </div>
+    </div>
+    <input type="button" class="btn btn-primary" value="Sign Up" (click)="signUp()"/>
+</form> -->
+
+<mat-card>
+    <mat-card-title>User Registeration</mat-card-title>
+
+    <mat-card-content>
+        <form class="example-form" [formGroup]="signUpForm" (ngSubmit)="signUp()">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>First Name</mat-label> 
+                <input matInput placeholder="FirstName" formControlName ="firstName">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Last Name</mat-label> 
+                <input matInput placeholder="Last Name" formControlName ="lastName">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Email</mat-label> 
+                <input matInput placeholder="Email" type = "email" formControlName ="emailId">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" type="password" formControlName ="password">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput placeholder="confirmPassword" type="password" formControlName ="confirmPassword">
+            </mat-form-field>
+            <div>
+                <button mat-raised-button type="submit" color="primary">Register</button>
+                <button mat-raised-button style="margin: 5px" color="accent" (click)="RedirectLogin()">Close</button>
+            </div>
+        </form>
+
+
+    </mat-card-content>
+</mat-card>

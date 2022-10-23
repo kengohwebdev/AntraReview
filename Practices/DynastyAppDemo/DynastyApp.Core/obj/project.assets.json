@@ -3151,11 +3151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
       "projectName": "DynastyApp.Core",
-      "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
+      "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
       "packagesPath": "C:\\Users\\kenai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\obj\\",
+      "outputPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3225,7 +3225,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
