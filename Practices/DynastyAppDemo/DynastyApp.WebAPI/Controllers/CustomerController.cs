@@ -1,6 +1,5 @@
 ﻿using DynastyApp.Core.Contract.Service;
 using DynastyApp.Core.Model;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,8 +7,6 @@ namespace DynastyApp.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
-
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerServiceAsync customerServiceAsync;

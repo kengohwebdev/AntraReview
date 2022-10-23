@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj": {}
+    "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj": {
+    "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
         "projectName": "DynastyApp.Core",
-        "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
+        "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
         "packagesPath": "C:\\Users\\kenai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\obj\\",
+        "outputPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,18 +81,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj": {
+    "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj",
         "projectName": "DynastyApp.Infrastructure",
-        "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\DynastyApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\kenai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj": {
-                "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj"
+              "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj": {
+                "projectPath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj"
               }
             }
           }
@@ -190,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
