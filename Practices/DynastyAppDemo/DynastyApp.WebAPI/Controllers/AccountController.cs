@@ -10,8 +10,12 @@ using System.Text;
 
 
 
+
+
 namespace DynastyApp.WebAPI.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class AccountController : Controller
     {
         private readonly IAccountServiceAsync _accountServiceAsync;
@@ -22,6 +26,8 @@ namespace DynastyApp.WebAPI.Controllers
             _accountServiceAsync = accountServiceAsync;
             _configuration = configuration;
         }
+
+
 
         [HttpPost]
         [Route("signup")]

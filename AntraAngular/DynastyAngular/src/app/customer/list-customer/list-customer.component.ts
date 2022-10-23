@@ -10,6 +10,26 @@ import { CustomerService } from 'src/services/customer.service';
 })
 export class ListCustomerComponent implements OnInit {
 
+  headername="Welcome";
+  salary = 0;
+
+  colors=['black','brown','gold','silver'];
+  nums = [1, 2, 3, 4];
+
+  isdisabled = true;
+  isMenuVisible=false;
+  
+  colorname="skyblue";
+  font = '40px';
+  stylevalue={"color":"limegreen","font-size":"20px"}
+
+  classname= 'headclass';
+
+ 
+
+  Functionclick(name:string){
+    alert(name)
+  }
 
   customerCollection:Customer[]=[]
   constructor(private customerService:CustomerService, private router:Router) {}
@@ -31,6 +51,11 @@ export class ListCustomerComponent implements OnInit {
     this.customerService.deleteCustomer(id).subscribe((d:any)=>{
       this.getData();
     });
+  }
+
+  
+  addCustomer(){
+    this.router.navigate(['/customer/add']);
   }
 
 }

@@ -26,8 +26,10 @@ import { RegionService } from 'src/services/region.service';
     RouterModule,
     HttpClientModule
   ],
-  providers:[RegionService,
+  providers:[
+    RegionService,
   
-    {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptor,multi:true}]
+    {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptor,multi:true}
+  ]
 })
 export class RegionModule { }

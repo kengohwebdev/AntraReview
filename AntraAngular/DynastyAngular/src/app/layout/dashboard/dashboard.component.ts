@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,11 +10,16 @@ export class DashboardComponent implements OnInit {
 
   constructor(private router:Router) { }
 
+
+
   ngOnInit(): void {
   }
+
   logout(){
     localStorage.removeItem("token")
     localStorage.clear();
     this.router.navigateByUrl("login")
     }
+
+    isMenuVisible=true;
   }

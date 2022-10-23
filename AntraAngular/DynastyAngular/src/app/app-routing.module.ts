@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminGuard } from 'src/guard/admin.guard';
-import { BuilderComponent } from './builder/builder.component';
-
-
+import { AuthGuard } from 'src/guard/auth.guard';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+
+
+
 
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: "login", loadComponent: () => import('./canlogin/canlogin.component')
-  .then(opt => opt.CanLoginComponent) },
   {
-    path: "access",
-    loadChildren: () =>
-      import('./access/access.module')
-        .then(opt => opt.AccessModule)
+    canLoad : [AuthGuard],
+    path: '', component: DashboardComponent
+    ,canActivate: [AuthGuard]
+
   },
-  { path : 'builder', component: BuilderComponent}
+  // {
+  //   path: '**', component: StatusComponent,
+  // },
+  { path: 'login', component: LoginComponent },
 
 ];
 

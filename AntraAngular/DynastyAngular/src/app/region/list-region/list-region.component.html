@@ -14,8 +14,11 @@
             <td>{{r.name}}</td>
             <td>
                 <input class="btn btn-primary" type="button" value="Update" (click)="editRegion(r.id)" /> 
-                <input class="btn btn-danger" type="button" value="Delete" (click)="deleteRegion(r.id)" /> 
+                <input class="btn btn-danger" type="button" value="Delete" style="margin:5px" (click)="deleteRegion(r.id)" /> 
             </td>
         </tr>
     </tbody>
 </table>
+
+
+<input class="btn btn-info" style="margin:5px" type="button" value="Add Region" (click)="addRegion()"/> 

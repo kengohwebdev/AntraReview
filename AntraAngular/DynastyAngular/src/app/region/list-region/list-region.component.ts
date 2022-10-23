@@ -33,4 +33,7 @@ export class ListRegionComponent implements OnInit {
     });
   }
 
+  addRegion(){
+    this.router.navigate(['/region/add']);
+  }
 }

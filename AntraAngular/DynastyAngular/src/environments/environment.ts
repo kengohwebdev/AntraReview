@@ -7,10 +7,10 @@ export const environment = {
   apiKey:'https://localhost:7139/api/',
   apiControllers:
   {
-    region:"Region",
-    customer:"Customer",
-    accountsignup:"Account/signup",
-    accountlogin:"Account/login"
+    region:"region",
+    customer:"customer",
+    accountsignup:"account/signup",
+    accountlogin:"account/login"
   }
 };
 /*

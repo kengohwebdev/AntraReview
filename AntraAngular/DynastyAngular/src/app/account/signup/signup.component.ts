@@ -1,6 +1,7 @@
 import { AccountService } from './../../../services/account.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,7 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 export class SignupComponent implements OnInit {
 
   signUpForm: FormGroup;
-  constructor(private fb:FormBuilder, private accountService:AccountService) {
+  constructor(private router:Router,private fb:FormBuilder, private accountService:AccountService) {
     this.signUpForm = this.fb.group({
       "firstName": new FormControl('',[Validators.required]),
       "lastName": new FormControl('',[Validators.required]),
@@ -19,6 +20,8 @@ export class SignupComponent implements OnInit {
       "confirmPassword": new FormControl('',[Validators.required]),
     })
    }
+
+
 
   ngOnInit(): void {
   }
@@ -30,4 +33,10 @@ export class SignupComponent implements OnInit {
     });
   }
 
+  RedirectLogin() {
+    this.router.navigateByUrl('home');
+  }
 }
+
+
+

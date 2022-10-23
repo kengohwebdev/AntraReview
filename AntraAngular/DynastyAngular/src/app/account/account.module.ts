@@ -6,7 +6,9 @@ import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AccountService } from 'src/services/account.service';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from 'src/interceptors/token.interceptor';
+import { MaterialModule } from 'src/Material.Module';
 
 
 @NgModule({
@@ -17,9 +19,11 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     AccountRoutingModule,
     ReactiveFormsModule,
+    MaterialModule,
+    HttpClientModule,
     RouterModule,
-    HttpClientModule
   ],
-  providers:[AccountService]
+  providers:[AccountService,
+  {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptor,multi:true}]
 })
 export class AccountModule { }

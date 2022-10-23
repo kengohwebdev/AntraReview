@@ -1,27 +1,46 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanDeactivate, CanLoad } from '@angular/router';
 import { AuthGuard } from 'src/guard/auth.guard';
+import { ChildGuard } from 'src/guard/child.guard';
+import { HomeComponent } from '../home/home.component';
+
 
 
 const routes: Routes = [
   {
     path: 'region',
     loadChildren: () =>
-      import('../region/region.module').then(m => m.RegionModule),
-    canActivate: [AuthGuard], canLoad: [AuthGuard]
+      import('../region/region.module')
+        .then(m => m.RegionModule),
+    canActivateChild: [ChildGuard],
+    canLoad: [AuthGuard],
+    canActivate: [AuthGuard],
+
+
   },
   {
     path: 'customer',
+    canLoad : [AuthGuard],
     loadChildren: () => import('../customer/customer.module')
       .then(m => m.CustomerModule),
-    canActivate: [AuthGuard], canLoad: [AuthGuard]
+    // canActivate: [AuthGuard],
+    // canLoad: [AuthGuard],
+    canActivateChild: [ChildGuard],
   },
   {
-    path: "access",
+    path: 'account',
     loadChildren: () =>
-      import('../access/access.module')
-        .then(opt => opt.AccessModule)
+      import('../account/account.module')
+        .then(opt => opt.AccountModule),
+
   },
+  {
+    path: 'home', component: HomeComponent,
+  },
+
+
+
+
 ];
 
 @NgModule({

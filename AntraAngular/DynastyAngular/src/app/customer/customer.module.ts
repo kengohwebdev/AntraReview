@@ -5,7 +5,7 @@ import { CustomerRoutingModule } from './customer-routing.module';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { EditCustomerComponent } from './edit-customer/edit-customer.component';
 import { ListCustomerComponent } from './list-customer/list-customer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { CustomerService } from 'src/services/customer.service';
@@ -23,10 +23,12 @@ import { TokenInterceptor } from 'src/interceptors/token.interceptor';
     CustomerRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
-  providers:[CustomerService, 
-   
-    {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptor,multi:true}]
+  providers:[ 
+    CustomerService,
+    {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptor,multi:true}
+  ]
 })
 export class CustomerModule { }
