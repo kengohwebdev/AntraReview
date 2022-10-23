@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6twljmt+ReaKFUdFUZfKE36+nxgL57zH+6MDIlibRawChXAe4BdykWZx3IeubfpFtehsRfpjCccIlCLTvsPnCA==",
+  "dgSpecHash": "6XeL5fZXRHbqwf/9/Ummni48A7EoPtb5begQoWoXtVz5SynGAwaESu2jNn08nNz+L3WkT9LAOgMJvFMoC3RRcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kenai\\source\\repos\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\kenai\\source\\repos\\Practices\\AntraReview\\Practices\\DynastyAppDemo\\DynastyApp.Core\\DynastyApp.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenai\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\kenai\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
